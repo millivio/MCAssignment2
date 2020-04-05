@@ -56,11 +56,12 @@
         android:layout_height="52dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/camcircle"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/photo_circle" />
+        android:padding="5dp"
+        app:srcCompat="@drawable/ic_photo_camera_black_24dp" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -76,24 +77,28 @@
         app:srcCompat="@drawable/ic_chevron" />
 
     <EditText
+        android:background="@drawable/txt_border"
+        android:paddingLeft="5dp"
         android:id="@+id/editText"
         android:layout_width="163dp"
         android:layout_height="65dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="User Name"
+        android:hint="User Name"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <EditText
+        android:background="@drawable/txt_border"
+        android:paddingLeft="5dp"
         android:id="@+id/editText2"
         android:layout_width="177dp"
         android:layout_height="65dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="Email"
+        android:hint="Email"
         app:layout_constraintBottom_toTopOf="@+id/editText5"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="1.0"
@@ -102,26 +107,30 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
+        android:background="@drawable/txt_border"
+        android:paddingLeft="5dp"
         android:id="@+id/editText5"
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Password"
+        android:hint="Password"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <EditText
+        android:background="@drawable/txt_border"
+        android:paddingLeft="5dp"
         android:id="@+id/editText6"
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Confirm Password"
+        android:hint="Confirm Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -129,6 +138,8 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
+        android:background="@drawable/txt_border"
+        android:paddingLeft="5dp"
         android:id="@+id/editText8"
         android:layout_width="112dp"
         android:layout_height="65dp"
@@ -137,7 +148,7 @@
         android:inputType="number"
         android:numeric="integer"
         android:phoneNumber="false"
-        android:text="Month"
+        android:hint="Month"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -145,6 +156,8 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
+        android:background="@drawable/txt_border"
+        android:paddingLeft="5dp"
         android:id="@+id/editText9"
         android:layout_width="91dp"
         android:layout_height="65dp"
@@ -153,13 +166,15 @@
         android:ems="10"
         android:inputType="number"
         android:numeric="integer"
-        android:text="Day"
+        android:hint="Day"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editText8"
         app:layout_constraintTop_toBottomOf="@+id/editText6"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
+        android:background="@drawable/txt_border"
+        android:paddingLeft="5dp"
         android:id="@+id/editText10"
         android:layout_width="116dp"
         android:layout_height="65dp"
@@ -168,13 +183,13 @@
         android:ems="10"
         android:inputType="number"
         android:numeric="integer"
+        android:hint="Year"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/editText9"
         app:layout_constraintTop_toBottomOf="@+id/editText6"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="Year" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button"
